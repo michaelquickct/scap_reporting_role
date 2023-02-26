@@ -1,0 +1,25 @@
+---
+# tasks file for scap_role
+
+- name: Gather RHEL version
+  set_fact:
+    rhel_version: "{{ansible_distribusion_major_version}}"
+
+- name: Install SCAP Dependencies
+  package:
+    name:
+      - scap-security-guide
+      - openscap
+      - openscap-scanner
+    state: present
+
+- name: Set SCAP content and profile
+  set_fact:
+    scap_content: "{{ scap_content_{{ rhel_version }} }}"
+    scap_profile: "{{ scap_profile_{{ rhel_version }} }}"
+
+- name: Run SCAP scan
+  command: oscap xccdf eval --profile "{{ scap_profile }}" --report /tmp/scap_report.html "{{ scap_content }}"
+  args:
+    chdir: /tmp
+

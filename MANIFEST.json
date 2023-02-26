@@ -1,0 +1,30 @@
+{
+ "collection_info": {
+  "namespace": "michaelquickct",
+  "name": "scap_reporting",
+  "version": "1.0.0",
+  "authors": [
+   "your name <example@domain.com>"
+  ],
+  "readme": "README.md",
+  "tags": [],
+  "description": "your collection description",
+  "license": [
+   "GPL-2.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "http://example.com/repository",
+  "documentation": "http://docs.example.com",
+  "homepage": "http://example.com",
+  "issues": "http://example.com/issue/tracker"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "034498e1e3d4ef6ba2cdba6332efb727565a690b2e21f10a4d06f8930ada191c",
+  "format": 1
+ },
+ "format": 1
+}

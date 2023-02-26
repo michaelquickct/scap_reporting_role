@@ -1,0 +1,14 @@
+---
+# defaults file for scap_role
+
+rhel_version: 7
+
+scap_content_7: "/usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml"
+scap_profile_7: "xccdf_org.ssgproject.content_profile_stig-rhel7-server-upstream"
+
+scap_content_8: "/usr/share/xml/scap/ssg/content/ssg-rhel8-ds.xml"
+scap_profile_8: "xccdf_org.ssgproject.content_profile_stig-rhel8-server-upstream"
+
+scap_content_9: "/usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml"
+scap_profile_9: "xccdf_org.ssgproject.content_profile_stig-rhel9-server-upstream"
+
